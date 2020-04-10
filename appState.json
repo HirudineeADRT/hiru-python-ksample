@@ -1,0 +1,183 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "2cfa2975-f824-4698-9a63-0315b5cc5ae5": {
+        "id": "2cfa2975-f824-4698-9a63-0315b5cc5ae5",
+        "parent": null,
+        "name": "hiru-python-ksample.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru-python-ksample.py",
+        "cursor": {
+          "lineNumber": 29,
+          "column": 48
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "hiruPythonKsample"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1hiru1312ddbsamplepost",
+            "config": {}
+          }
+        ]
+      },
+      "f2c11f7f-bc8e-4dd4-a0ea-f425ccb5f4cf": {
+        "id": "f2c11f7f-bc8e-4dd4-a0ea-f425ccb5f4cf",
+        "parent": null,
+        "name": "secondfile.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "secondfile.py",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "secondfile"
+        },
+        "triggers": [
+          {
+            "resourceName": "ddbhirutestddb",
+            "config": {
+              "StartingPosition": "LATEST",
+              "BatchSize": "100",
+              "StreamViewType": "NEW_IMAGE"
+            }
+          }
+        ]
+      }
+    },
+    "openFiles": [
+      "2cfa2975-f824-4698-9a63-0315b5cc5ae5",
+      "f2c11f7f-bc8e-4dd4-a0ea-f425ccb5f4cf"
+    ],
+    "currentFileId": "f2c11f7f-bc8e-4dd4-a0ea-f425ccb5f4cf",
+    "resources": {
+      "apigusEast1hiru1312ddbsamplepost": {
+        "name": "apigusEast1hiru1312ddbsamplepost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "hiru1312",
+          "apiId": "9jlzhlqmxj",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "6lfukhtixf",
+          "existingResources": {
+            "/test": "045wnn",
+            "/": "6lfukhtixf",
+            "/s3issuecheck": "89aekf",
+            "/0228/recognition": "9iqavy",
+            "/sqsqueue": "e0wmnt",
+            "/check": "fl6i90",
+            "/24hours": "hb05w5",
+            "/check/s3": "j4e0ex",
+            "/0228": "k7ebnd",
+            "/test/hiru": "m0kbr3",
+            "/new/prodrelease": "qvk8oh",
+            "/newprod": "rgjln9",
+            "/sample": "tc5zpx",
+            "/new": "uafc7c",
+            "/smoketest": "uu6qav",
+            "/kklk": "vf4n24",
+            "/sample/hiru": "xwhexr"
+          },
+          "resourceMode": 0,
+          "resourceName": "ddbsample",
+          "resourcePath": "/ddbsample",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "52lk4w",
+          "mode": 1
+        }
+      },
+      "ddbhirutestddb": {
+        "name": "ddbhirutestddb",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "hirutestddb",
+            "partitionKey": "Name",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          }
+        }
+      },
+      "ses-hirudinee+123@adroitlogic.com": {
+        "name": "ses-hirudinee+123@adroitlogic.com",
+        "type": "SES",
+        "config": {
+          "selectedIdentity": "hirudinee+123@adroitlogic.com",
+          "projectRegion": "us-east-1"
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru-python-ksample",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1586521992521
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru-python-ksample",
+      "url": "https://github.com/HirudineeADRT/hiru-python-ksample"
+    }
+  }
+}
